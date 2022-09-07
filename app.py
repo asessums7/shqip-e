@@ -12,7 +12,7 @@ st.write("**Starting** the *build* of 'penguin' app :penguin: :mag:")
 st.write("Data is taken from [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/")
 st.header("Data")
 
-df = pd.read_csv("penguins_extra.csv")
+df = pd.read_csv("../data/shqip-english.csv")
 st.write("Display a sample of 20 data points", df.sample(20))
 
 species = st.selectbox(f"Select species", df.species.unique())
